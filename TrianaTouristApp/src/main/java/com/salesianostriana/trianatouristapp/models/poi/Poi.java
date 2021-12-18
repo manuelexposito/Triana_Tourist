@@ -8,6 +8,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 @Entity
@@ -19,7 +20,7 @@ import java.util.List;
 public class Poi implements Serializable {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
 
@@ -40,30 +41,26 @@ public class Poi implements Serializable {
     @Builder.Default
     @ManyToMany
     @JoinTable(joinColumns = @JoinColumn(name = "poi_id",
-            foreignKey = @ForeignKey(name="FK_ROUTE_POI")),
+            foreignKey = @ForeignKey(name = "FK_ROUTE_POI")),
             inverseJoinColumns = @JoinColumn(name = "route_id"),
-            name = "POI-ROUTE"
+            name = "POI_ROUTE"
     )
     private List<Route> routes = new ArrayList<>();
 
 
-    private String coverPhoto;
+    private String coverPhoto, photo2, photo3;
 
-    //TODO: solucionar exception con las fotos
-  /*  @Builder.Default
-    private List<String> photos = new ArrayList<>();
-*/
 
     //HELPERS
 
-    public void addToRoute(Route r){
+    public void addToRoute(Route r) {
 
         this.routes.add(r);
         r.getSteps().add(this);
 
     }
 
-    public void removeFromRoute(Route r){
+    public void removeFromRoute(Route r) {
 
         r.getSteps().remove(this);
         this.routes.remove(r);

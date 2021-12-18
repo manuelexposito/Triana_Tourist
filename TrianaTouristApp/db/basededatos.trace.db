@@ -684,3 +684,982 @@ Syntax error in SQL statement "
        add constraint FK_ROUTE_POI 
        foreign key (poi_id) 
        references poi [42001-200]
+2021-12-18 17:44:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:44:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 17:44:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 17:44:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 17:44:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:45:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:45:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 17:45:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 17:45:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 17:47:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:47:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 17:47:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 17:47:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 17:47:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:47:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:47:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 17:47:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 17:47:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 17:57:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:57:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 17:57:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 17:57:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 17:57:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:57:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:57:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 17:57:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 17:57:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 17:57:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:58:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:58:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 17:58:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 17:58:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 17:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 17:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 17:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 17:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 17:58:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:00:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:00:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 18:00:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 18:00:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 18:00:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:02:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:02:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 18:02:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 18:02:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 18:02:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:05:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:05:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 18:05:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 18:05:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 18:05:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:08:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:08:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 18:08:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 18:08:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 18:08:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:09:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:09:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 18:09:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 18:09:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 18:09:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:13:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:13:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 18:13:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 18:13:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 18:13:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:17:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:17:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 18:17:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 18:17:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 18:17:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT ROUTES0_.POI_ID AS POI_ID1_2_0_, ROUTES0_.ROUTE_ID AS ROUTE_ID2_2_0_, ROUTE1_.ID AS ID1_3_1_, ROUTE1_.NAME AS NAME2_3_1_ FROM POI-[*]ROUTE ROUTES0_ INNER JOIN ROUTE ROUTE1_ ON ROUTES0_.ROUTE_ID=ROUTE1_.ID WHERE ROUTES0_.POI_ID=?"
+Syntax error in SQL statement "SELECT ROUTES0_.POI_ID AS POI_ID1_2_0_, ROUTES0_.ROUTE_ID AS ROUTE_ID2_2_0_, ROUTE1_.ID AS ID1_3_1_, ROUTE1_.NAME AS NAME2_3_1_ FROM POI-[*]ROUTE ROUTES0_ INNER JOIN ROUTE ROUTE1_ ON ROUTES0_.ROUTE_ID=ROUTE1_.ID WHERE ROUTES0_.POI_ID=?"; SQL statement:
+select routes0_.poi_id as poi_id1_2_0_, routes0_.route_id as route_id2_2_0_, route1_.id as id1_3_1_, route1_.name as name2_3_1_ from poi-route routes0_ inner join route route1_ on routes0_.route_id=route1_.id where routes0_.poi_id=? [42000-200]
+2021-12-18 18:17:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:19:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]
+2021-12-18 18:19:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"
+Syntax error in SQL statement "
+    CREATE TABLE POI-[*]ROUTE (
+       POI_ID BIGINT NOT NULL,
+        ROUTE_ID BIGINT NOT NULL
+    )"; SQL statement:
+
+    create table poi-route (
+       poi_id bigint not null,
+        route_id bigint not null
+    ) [42000-200]
+2021-12-18 18:19:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK97U3S3EQAB2147K7R0QKT27D1 
+       FOREIGN KEY (ROUTE_ID) 
+       REFERENCES ROUTE"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK97u3s3eqab2147k7r0qkt27d1 
+       foreign key (route_id) 
+       references route [42001-200]
+2021-12-18 18:19:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "
+    ALTER TABLE POI-[*]ROUTE 
+       ADD CONSTRAINT FK_ROUTE_POI 
+       FOREIGN KEY (POI_ID) 
+       REFERENCES POI"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+    alter table poi-route 
+       add constraint FK_ROUTE_POI 
+       foreign key (poi_id) 
+       references poi [42001-200]
+2021-12-18 18:19:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT ROUTES0_.POI_ID AS POI_ID1_2_0_, ROUTES0_.ROUTE_ID AS ROUTE_ID2_2_0_, ROUTE1_.ID AS ID1_3_1_, ROUTE1_.NAME AS NAME2_3_1_ FROM POI-[*]ROUTE ROUTES0_ INNER JOIN ROUTE ROUTE1_ ON ROUTES0_.ROUTE_ID=ROUTE1_.ID WHERE ROUTES0_.POI_ID=?"
+Syntax error in SQL statement "SELECT ROUTES0_.POI_ID AS POI_ID1_2_0_, ROUTES0_.ROUTE_ID AS ROUTE_ID2_2_0_, ROUTE1_.ID AS ID1_3_1_, ROUTE1_.NAME AS NAME2_3_1_ FROM POI-[*]ROUTE ROUTES0_ INNER JOIN ROUTE ROUTE1_ ON ROUTES0_.ROUTE_ID=ROUTE1_.ID WHERE ROUTES0_.POI_ID=?"; SQL statement:
+select routes0_.poi_id as poi_id1_2_0_, routes0_.route_id as route_id2_2_0_, route1_.id as id1_3_1_, route1_.name as name2_3_1_ from poi-route routes0_ inner join route route1_ on routes0_.route_id=route1_.id where routes0_.poi_id=? [42000-200]
+2021-12-18 18:19:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "
+Syntax error in SQL statement "
+    DROP TABLE IF EXISTS POI-[*]ROUTE CASCADE "; SQL statement:
+
+    drop table if exists poi-route CASCADE  [42000-200]

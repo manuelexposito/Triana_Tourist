@@ -29,16 +29,15 @@ public class GetPOIDto {
 
     @Past
     private LocalDate date;
- /*
+
     @ManyToOne
-    private Category category;
+    private String categoryName;
 
     @URL
     @NotNull
     private String coverPhoto;
 
     @URL
-    private List<String> photos;
-*/
+    private String photo2, photo3;
 
 }
