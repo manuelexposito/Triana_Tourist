@@ -17,6 +17,6 @@ public class GetRouteDto {
 
     private String name;
 
-    private List<GetPOIDto> poi = new ArrayList<>();
+    private List<GetPOIDto> steps = new ArrayList<>();
 
 }

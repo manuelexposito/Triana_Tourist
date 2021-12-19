@@ -3,6 +3,7 @@ package com.salesianostriana.trianatouristapp.models.poi;
 import lombok.*;
 import com.salesianostriana.trianatouristapp.models.category.Category;
 import com.salesianostriana.trianatouristapp.models.route.Route;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.io.Serializable;

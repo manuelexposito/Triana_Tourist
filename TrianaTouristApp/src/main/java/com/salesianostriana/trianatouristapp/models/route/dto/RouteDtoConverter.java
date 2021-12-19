@@ -20,10 +20,15 @@ public class RouteDtoConverter {
 
         return GetRouteDto.builder()
                 .name(route.getName())
-                .poi(route.getSteps().stream()
+                .steps(route.getSteps().stream()
                         .map(poiDtoConverter::convertToDto)
                         .collect(Collectors.toList())).build();
 
+    }
+
+    public Route createRouteDtoToRoute(CreateRouteDto routeDto){
+        return Route.builder()
+                .name(routeDto.getName()).build();
     }
 
 }

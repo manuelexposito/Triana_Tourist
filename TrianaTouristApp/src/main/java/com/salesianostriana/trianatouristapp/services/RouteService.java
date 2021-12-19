@@ -4,7 +4,9 @@ import com.salesianostriana.trianatouristapp.errors.exceptions.ListEntityNotFoun
 import com.salesianostriana.trianatouristapp.errors.exceptions.SingleEntityNotFoundException;
 import com.salesianostriana.trianatouristapp.models.poi.Poi;
 import com.salesianostriana.trianatouristapp.models.route.Route;
+import com.salesianostriana.trianatouristapp.models.route.dto.CreateRouteDto;
 import com.salesianostriana.trianatouristapp.models.route.dto.GetRouteDto;
+import com.salesianostriana.trianatouristapp.models.route.dto.RouteDtoConverter;
 import org.springframework.stereotype.Service;
 import com.salesianostriana.trianatouristapp.repositories.RouteRepository;
 import com.salesianostriana.trianatouristapp.services.base.BaseService;
@@ -27,6 +29,12 @@ public class RouteService extends BaseService<Route, Long, RouteRepository> {
 
     }
 
+    public Route save(CreateRouteDto dto, RouteDtoConverter converter){
+        Route newRoute = converter.createRouteDtoToRoute(dto);
+
+        return save(newRoute);
+
+    }
 
 
     public void deleteRoute(Route route, PoiService poiService) {
