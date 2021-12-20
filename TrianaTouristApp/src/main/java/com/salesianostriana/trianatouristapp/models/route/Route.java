@@ -1,7 +1,9 @@
 package com.salesianostriana.trianatouristapp.models.route;
 
+import com.salesianostriana.trianatouristapp.validation.annotations.UniqueElement;
 import lombok.*;
 import com.salesianostriana.trianatouristapp.models.poi.Poi;
+import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.*;
 import java.io.Serializable;

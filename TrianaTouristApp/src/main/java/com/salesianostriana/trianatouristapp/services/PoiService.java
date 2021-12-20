@@ -8,18 +8,15 @@ import com.salesianostriana.trianatouristapp.models.poi.dto.CreatePoiDto;
 import com.salesianostriana.trianatouristapp.models.poi.dto.GetPOIDto;
 import com.salesianostriana.trianatouristapp.models.poi.dto.PoiDtoConverter;
 import com.salesianostriana.trianatouristapp.models.route.Route;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 import com.salesianostriana.trianatouristapp.repositories.PoiRepository;
 import com.salesianostriana.trianatouristapp.services.base.BaseService;
 
-import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 @Service
-public class PoiService extends BaseService<Poi, Long, PoiRepository> {
+public class    PoiService extends BaseService<Poi, Long, PoiRepository> {
 
 
     @Override

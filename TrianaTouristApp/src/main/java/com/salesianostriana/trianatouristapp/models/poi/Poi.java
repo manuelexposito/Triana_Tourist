@@ -1,5 +1,6 @@
 package com.salesianostriana.trianatouristapp.models.poi;
 
+import com.salesianostriana.trianatouristapp.validation.annotations.UniqueElement;
 import lombok.*;
 import com.salesianostriana.trianatouristapp.models.category.Category;
 import com.salesianostriana.trianatouristapp.models.route.Route;
@@ -35,6 +36,7 @@ public class Poi implements Serializable {
 
 
     private LocalDate date;
+
 
     @ManyToOne
     private Category category;

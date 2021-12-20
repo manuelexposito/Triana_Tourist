@@ -1,5 +1,6 @@
 package com.salesianostriana.trianatouristapp.controllers;
 
+import com.salesianostriana.trianatouristapp.models.poi.Poi;
 import com.salesianostriana.trianatouristapp.models.poi.dto.PoiDtoConverter;
 import com.salesianostriana.trianatouristapp.models.route.Route;
 import com.salesianostriana.trianatouristapp.models.route.dto.CreateRouteDto;
@@ -49,6 +50,17 @@ public class RouteController {
     }
 
     //TODO: AÑADIR Poi a una ruta
+
+    @PostMapping("/{id1}/poi/{id2}")
+    public ResponseEntity<GetRouteDto> addPoiToRoute(@Valid @PathVariable("id1") Long idRoute, @PathVariable("id2") Long idPoi){
+        Poi poi = poiService.findPoiById(idPoi);
+        Route route = routeService.findRouteById(idRoute);
+
+        poiService.addPoiToRoute(poi, route, routeService);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(routeDtoConverter.convertToDto(route, poiDtoConverter));
+
+    }
     //TODO: ELIMINAR Poi de una ruta
 
     //TODO: Put
