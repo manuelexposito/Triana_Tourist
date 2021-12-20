@@ -9,13 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @RequiredArgsConstructor
-public class NotRepeatableValidator implements ConstraintValidator<NotRepeatable, String> {
+public class NotRepeatableValidator implements ConstraintValidator<NotRepeatable, Object> {
 
     private final PoiRepository poiRepository;
     private String coverPhoto;
@@ -31,16 +28,17 @@ public class NotRepeatableValidator implements ConstraintValidator<NotRepeatable
     }
 
     @Override
-    public boolean isValid(String s, ConstraintValidatorContext constraintValidatorContext) {
-        //return false;
-        //return !poiService.hasRepeatedPhotos();
-        String p1= (String) PropertyAccessorFactory.forBeanPropertyAccess(s).getPropertyValue(coverPhoto);
-        String p2= (String) PropertyAccessorFactory.forBeanPropertyAccess(s).getPropertyValue(photo2);
-        String p3= (String) PropertyAccessorFactory.forBeanPropertyAccess(s).getPropertyValue(photo3);
+    public boolean isValid(Object o, ConstraintValidatorContext constraintValidatorContext) {
 
 
+        String p1= (String) PropertyAccessorFactory.forBeanPropertyAccess(o).getPropertyValue(coverPhoto);
+        String p2= (String) PropertyAccessorFactory.forBeanPropertyAccess(o).getPropertyValue(photo2);
+        String p3= (String) PropertyAccessorFactory.forBeanPropertyAccess(o).getPropertyValue(photo3);
 
-        List<String> images = List.of(p1);
+
+        List<String> images = new ArrayList<>();
+        images.add(p1);
+
         if(p2 != null)
             images.add(p2);
 
@@ -55,7 +53,9 @@ public class NotRepeatableValidator implements ConstraintValidator<NotRepeatable
             }
         }
 
+
         return true;
+
        // return !poiRepository.findAllPhotosFromPoi().contains(field);
     }
 }
