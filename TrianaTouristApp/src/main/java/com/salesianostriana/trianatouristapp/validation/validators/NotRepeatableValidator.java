@@ -56,6 +56,6 @@ public class NotRepeatableValidator implements ConstraintValidator<NotRepeatable
 
         return true;
 
-       // return !poiRepository.findAllPhotosFromPoi().contains(field);
+       
     }
 }

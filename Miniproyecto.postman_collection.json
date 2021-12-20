@@ -1,0 +1,405 @@
+{
+	"info": {
+		"_postman_id": "5e2357bb-0d3f-40f8-9cc8-2a181b64362d",
+		"name": "Miniproyecto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POI",
+			"item": [
+				{
+					"name": "Get POI list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/poi/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"poi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one POI",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/poi/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"poi",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create POI",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Parque de María Luisa\",\r\n    \"location\": \"37.3847553,-6.0152341\",\r\n    \"description\":\"Es el gran parque urbano de Sevilla, diseñado por el paisajista francés Forestier para la Exposición Iberoamericana de 1929. Con él renace un estilo puramente hispánico de jardinería que sería denominado como 'neosevillano' o 'neoárabe' y que tendrá gran influencia en todos los parques públicos españoles del primer tercio de siglo. Gran parte de sus plazas, glorietas y monumentos está dedicada a figuras de la literatura nacional, como la Glorieta de Bécquer, Cervantes, Hermanos Machado, etc. y sin duda una de sus características es el empleo en gran parte de sus fuentes, estanques y mobiliario del ladrillo y el azulejo.\",\r\n    \"date\": \"1914-04-18\",\r\n    \"categoryId\": 3,\r\n    \"coverPhoto\": \"https://cdn2.civitatis.com/espana/sevilla/guia/parque-maria-luisa.jpg\",\r\n    \"photo2\": \"https://cdn2.civitatis.com/espana/sevilla/guia/parque-maria-luisa.jpg\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/poi/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"poi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Poi",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Casa Murillo\",\r\n    \"location\": \"37.3856514,-5.9912359\",\r\n    \"description\":\"Los últimos años de creación del pintor barroco Bartolomé Esteban Murillo transcurrieron en esta casa palacio sevillana convertida en 2017 –coincidiendo con la celebración del ‘Año Murillo’- en un completo centro de interpretación y difusión de su legado. El objetivo es que la vida y obra de Murillo, considerado precursor de la pintura moderna, llegue a toda la sociedad. Así, la Casa Murillo cuenta con un espacio de acogida de visitantes, un aula de proyecciones, diferentes salas con reproducciones de pinturas emblemáticas del maestro del siglo XVII y un espacio infantil. El centro organiza talleres familiares, cursos, conciertos y otras actividades divulgativas. Ubicado en pleno barrio de Santa Cruz, la reforma acometida en el edificio ha tratado de respetar la estética del siglo XVII, con un pozo en medio de un patio central rodeado de arquería de medio punto sobre columnas.\",\r\n    \"date\": \"1982-04-18\",\r\n    \"categoryId\": 2,\r\n    \"coverPhoto\": \"https://www.google.es/maps/place/Casa+de+Murillo/@37.3856472,-5.9890472,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNH75hh9W-4Wm121KCsu_yBuoFRaQ13q22fawgt!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNH75hh9W-4Wm121KCsu_yBuoFRaQ13q22fawgt%3Dw203-h270-k-no!7i3464!8i4618!4m5!3m4!1s0xd126c1951324519:0x85b894770866c631!8m2!3d37.3856472!4d-5.9890472?hl=es#\",\r\n    \"photo2\": \"https://www.google.es/maps/place/Casa+de+Murillo/@37.3856472,-5.9890472,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPbikKbRWxSgPseJrchtXWMIksgsqcgHGa9T3JV!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPbikKbRWxSgPseJrchtXWMIksgsqcgHGa9T3JV%3Dw129-h86-k-no!7i1280!8i853!4m5!3m4!1s0xd126c1951324519:0x85b894770866c631!8m2!3d37.3856472!4d-5.9890472?hl=es#\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/poi/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"poi",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete POI",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/poi/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"poi",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ROUTE",
+			"item": [
+				{
+					"name": "Get Routes List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/route/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"route",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Route",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/route/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"route",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Route",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/route/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"route",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete route",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/route/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"route",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Route",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Dónde parar a descansar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/route/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"route",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Poi to Route",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/route/1/poi/3",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"route",
+								"1",
+								"poi",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Poi From Route",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/route/1/poi/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"route",
+								"1",
+								"poi",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CATEGORY",
+			"item": [
+				{
+					"name": "Get All Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/category/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/category/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Lugares más visitados\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/category/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Edificios de la historia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/category/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/category/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_URL",
+			"value": "localhost:8080"
+		}
+	]
+}
