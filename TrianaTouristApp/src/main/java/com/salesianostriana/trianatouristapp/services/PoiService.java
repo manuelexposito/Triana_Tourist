@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 import com.salesianostriana.trianatouristapp.repositories.PoiRepository;
 import com.salesianostriana.trianatouristapp.services.base.BaseService;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
@@ -32,7 +34,9 @@ public class    PoiService extends BaseService<Poi, Long, PoiRepository> {
 
     }
 
-
+    public List<Poi> findAllByCategory(Long id){
+        return repository.findAllByCategory(id);
+    }
 
     @Override
     public List<Poi> saveAll(List<Poi> list) {
@@ -68,6 +72,25 @@ public class    PoiService extends BaseService<Poi, Long, PoiRepository> {
         return save(newPoi);
     }
 
+    public Poi edit(Poi poi, CreatePoiDto poiDto, CategoryService categoryService){
+
+        poi = Poi.builder()
+                .id(poi.getId())
+                .name(poiDto.getName())
+                .location(poiDto.getLocation())
+                .date(poiDto.getDate())
+                .photo2(poiDto.getPhoto2())
+                .photo3(poiDto.getPhoto3())
+                .coverPhoto(poiDto.getCoverPhoto())
+                .description(poiDto.getDescription())
+                .category(categoryService.findCategoryById(poiDto.getCategoryId()))
+                .build();
+
+        return save(poi);
+
+    }
+
+
     public void addPoiToRoute(Poi poi, Route r, List<Poi> steps ,RouteService routeService){
 
         if(!hasRepeatedPoi(steps, poi)){
@@ -86,6 +109,19 @@ public class    PoiService extends BaseService<Poi, Long, PoiRepository> {
         poi.removeFromRoute(r);
         save(poi);
         routeService.save(r);
+    }
+
+    public void deletePoi(Poi poi, RouteService routeService){
+
+        List<Route> listaBase = new ArrayList<>();
+        listaBase.addAll(poi.getRoutes());
+        for (Iterator<Route> it = listaBase.iterator(); it.hasNext();){
+            Route r = it.next();
+            removePoiFromRoute(poi, r, routeService);
+        }
+
+        delete(poi);
+
     }
 
     public boolean hasRepeatedPoi(List<Poi> steps, Poi newPoi){

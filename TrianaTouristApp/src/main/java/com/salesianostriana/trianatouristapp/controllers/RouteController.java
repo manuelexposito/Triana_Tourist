@@ -1,6 +1,7 @@
 package com.salesianostriana.trianatouristapp.controllers;
 
 import com.salesianostriana.trianatouristapp.models.poi.Poi;
+import com.salesianostriana.trianatouristapp.models.poi.dto.CreatePoiDto;
 import com.salesianostriana.trianatouristapp.models.poi.dto.PoiDtoConverter;
 import com.salesianostriana.trianatouristapp.models.route.Route;
 import com.salesianostriana.trianatouristapp.models.route.dto.CreateRouteDto;
@@ -40,8 +41,15 @@ public class RouteController {
     }
 
 
-    //TODO: Get One
-    //TODO: Post
+
+    @GetMapping("/{id}")
+    public GetRouteDto findOne(@PathVariable @Min(value = 1, message = "{id.minimo}") Long id){
+
+        return routeDtoConverter.convertToDto(routeService.findRouteById(id), poiDtoConverter);
+
+    }
+
+
 
     @PostMapping("/")
     public ResponseEntity<GetRouteDto> createRoute(@Valid @RequestBody CreateRouteDto routeDto){
@@ -54,7 +62,7 @@ public class RouteController {
 
 
     @PostMapping("/{id1}/poi/{id2}")
-    public ResponseEntity<GetRouteDto> addPoiToRoute(@Valid @PathVariable("id1") @Min(value = 1) Long idRoute, @PathVariable("id2") @Min(value = 1) Long idPoi){
+    public ResponseEntity<GetRouteDto> addPoiToRoute(@Valid @PathVariable("id1") @Min(value = 1, message = "{id.minimo}") Long idRoute, @PathVariable("id2") @Min(value = 1, message = "{id.minimo}") Long idPoi){
         Poi poi = poiService.findPoiById(idPoi);
         Route route = routeService.findRouteById(idRoute);
 
@@ -63,10 +71,10 @@ public class RouteController {
         return ResponseEntity.status(HttpStatus.CREATED).body(routeDtoConverter.convertToDto(route, poiDtoConverter));
 
     }
-    //TODO: ELIMINAR Poi de una ruta
+
 
     @DeleteMapping("/{id1}/poi/{id2}")
-    public ResponseEntity<?> removePoiFromRoute(@PathVariable("id1") Long idRoute, @PathVariable("id2") Long idPoi){
+    public ResponseEntity<?> removePoiFromRoute(@PathVariable("id1") @Min(value = 1, message = "{id.minimo}")Long idRoute, @PathVariable("id2") @Min(value = 1, message = "{id.minimo}") Long idPoi){
         Poi poi = poiService.findPoiById(idPoi);
         Route route = routeService.findRouteById(idRoute);
 
@@ -77,10 +85,17 @@ public class RouteController {
     }
 
     //TODO: Put
-    //TODO: Delete
+    @PutMapping("/{id}")
+    public GetRouteDto editRoute(@Valid @PathVariable @Min(value = 1, message = "{id.minimo}") Long id, @RequestBody CreatePoiDto dto){
+
+
+        Route routeToBeEdited = routeService.findRouteById(id);
+        routeService.edit(routeToBeEdited, dto);
+        return routeDtoConverter.convertToDto(routeToBeEdited, poiDtoConverter);
+    }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> delete(@PathVariable Long id){
+    public ResponseEntity<?> delete(@PathVariable @Min(value = 1, message = "{id.minimo}") Long id){
 
         Route route = routeService.findRouteById(id);
 

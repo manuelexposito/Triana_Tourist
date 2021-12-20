@@ -5,6 +5,7 @@ import com.salesianostriana.trianatouristapp.errors.exceptions.RepeatedElementsE
 import com.salesianostriana.trianatouristapp.errors.model.ApiError;
 import com.salesianostriana.trianatouristapp.errors.model.ApiSubError;
 import com.salesianostriana.trianatouristapp.errors.model.ApiValidationSubError;
+import org.hibernate.validator.internal.engine.path.PathImpl;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+import javax.validation.ConstraintViolationException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -42,6 +44,18 @@ public class GlobalRestAdviceController extends ResponseEntityExceptionHandler {
                 ).collect(Collectors.toList()));
     }
 
+    @ExceptionHandler({ConstraintViolationException.class})
+    public ResponseEntity<?> handleConstraintViolationException(ConstraintViolationException ex, WebRequest request){
+
+        return buildApiError(ex, HttpStatus.BAD_REQUEST, request, ex.getConstraintViolations()
+                .stream()
+                .map( cv -> ApiValidationSubError.builder()
+                        .objeto(cv.getRootBeanClass().getSimpleName())
+                        .campo(((PathImpl)cv.getPropertyPath()).getLeafNode().asString())
+                        .valorRechazado(cv.getInvalidValue())
+                        .mensaje(cv.getMessage())
+                        .build()).collect(Collectors.toList()));
+    }
 
 
     @ExceptionHandler({EntityNotFoundException.class})

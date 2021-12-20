@@ -19,4 +19,11 @@ public class CategoryDtoConverter {
         return modelMapper.map(category, GetCategoryDto.class);
     }
 
+
+    public Category createCategoryDtoToCategory(CreateCategoryDto categoryDto){
+
+        return modelMapper.map(categoryDto, Category.class);
+
+    }
+
 }

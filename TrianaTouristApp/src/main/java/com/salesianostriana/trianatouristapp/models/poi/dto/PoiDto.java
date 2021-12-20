@@ -20,7 +20,6 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
-//TODO: Anotacion para que no se repitan las fotos
 @NotRepeatable(coverPhoto = "coverPhoto", photo2 = "photo2", photo3 = "photo3")
 public class PoiDto {
 

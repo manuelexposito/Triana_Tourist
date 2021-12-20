@@ -1,26 +1,32 @@
 package com.salesianostriana.trianatouristapp.controllers;
 
+import com.salesianostriana.trianatouristapp.models.poi.Poi;
 import com.salesianostriana.trianatouristapp.models.poi.dto.CreatePoiDto;
 import com.salesianostriana.trianatouristapp.models.poi.dto.GetPOIDto;
 import com.salesianostriana.trianatouristapp.models.poi.dto.PoiDtoConverter;
 import com.salesianostriana.trianatouristapp.services.CategoryService;
 import com.salesianostriana.trianatouristapp.services.PoiService;
+import com.salesianostriana.trianatouristapp.services.RouteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Min;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/poi")
 @RequiredArgsConstructor
+@Validated
 public class POIController {
 
     private final PoiService poiService;
     private final CategoryService categoryService;
+    private final RouteService routeService;
     private final PoiDtoConverter poiDtoConverter;
 
 
@@ -34,9 +40,9 @@ public class POIController {
 
 
     }
-    //TODO: Validar que no se pueda poner un id menor a 1
+
     @GetMapping("/{id}")
-    public GetPOIDto findOne(@PathVariable Long id){
+    public GetPOIDto findOne(@PathVariable @Min(value = 1, message = "{id.minimo}") Long id){
 
         GetPOIDto poi = poiDtoConverter.convertToDto(poiService.findPoiById(id));
 
@@ -52,8 +58,23 @@ public class POIController {
 
     }
 
-    //TODO: Put
-    //TODO: Delete
+
+    @PutMapping("/{id}")
+    public GetPOIDto editPoi(@Valid @PathVariable @Min(value = 1, message = "{id.minimo}") Long id, @RequestBody CreatePoiDto dto){
+        Poi poiToBeEdited = poiService.findPoiById(id);
+        poiService.edit(poiToBeEdited, dto,categoryService);
+
+        return poiDtoConverter.convertToDto(poiToBeEdited);
 
 
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deletePoi(@PathVariable @Min(value = 1, message = "{id.minimo}") Long id){
+
+
+        Poi poi = poiService.findPoiById(id);
+        poiService.deletePoi(poi, routeService);
+        return ResponseEntity.noContent().build();
+    }
 }
