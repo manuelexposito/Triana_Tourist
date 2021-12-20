@@ -37,10 +37,20 @@ public class NotRepeatableValidator implements ConstraintValidator<NotRepeatable
         String p1= (String) PropertyAccessorFactory.forBeanPropertyAccess(s).getPropertyValue(coverPhoto);
         String p2= (String) PropertyAccessorFactory.forBeanPropertyAccess(s).getPropertyValue(photo2);
         String p3= (String) PropertyAccessorFactory.forBeanPropertyAccess(s).getPropertyValue(photo3);
-        List<String> images = List.of(p1, p2, p3);
+
+
+
+        List<String> images = List.of(p1);
+        if(p2 != null)
+            images.add(p2);
+
+        if(p3 != null)
+            images.add(p3);
+
+
         Set<String> set = new HashSet<>();
         for(String p : images){
-            if(set.add(p) == false){
+            if(!set.add(p)){
                 return false;
             }
         }

@@ -12,6 +12,7 @@ import javax.validation.constraints.NotEmpty;
 @Builder
 public class GetCategoryDto {
 
+    private Long id;
     @UniqueName
     @NotEmpty
     private String name;

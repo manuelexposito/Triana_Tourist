@@ -1,6 +1,6 @@
 package com.salesianostriana.trianatouristapp.models.poi;
 
-import com.salesianostriana.trianatouristapp.validation.annotations.UniqueElement;
+
 import lombok.*;
 import com.salesianostriana.trianatouristapp.models.category.Category;
 import com.salesianostriana.trianatouristapp.models.route.Route;
@@ -65,8 +65,9 @@ public class Poi implements Serializable {
 
     public void removeFromRoute(Route r) {
 
-        r.getSteps().remove(this);
         this.routes.remove(r);
+        r.getSteps().remove(this);
+
 
     }
 

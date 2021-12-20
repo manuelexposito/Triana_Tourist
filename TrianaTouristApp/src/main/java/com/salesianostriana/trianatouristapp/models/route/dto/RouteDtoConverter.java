@@ -19,6 +19,7 @@ public class RouteDtoConverter {
     public GetRouteDto convertToDto(Route route, PoiDtoConverter poiDtoConverter){
 
         return GetRouteDto.builder()
+                .id(route.getId())
                 .name(route.getName())
                 .steps(route.getSteps().stream()
                         .map(poiDtoConverter::convertToDto)

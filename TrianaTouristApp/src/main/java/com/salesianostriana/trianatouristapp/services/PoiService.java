@@ -1,6 +1,7 @@
 package com.salesianostriana.trianatouristapp.services;
 
 import com.salesianostriana.trianatouristapp.errors.exceptions.ListEntityNotFoundException;
+import com.salesianostriana.trianatouristapp.errors.exceptions.RepeatedElementsException;
 import com.salesianostriana.trianatouristapp.errors.exceptions.SingleEntityNotFoundException;
 import com.salesianostriana.trianatouristapp.models.category.Category;
 import com.salesianostriana.trianatouristapp.models.poi.Poi;
@@ -67,11 +68,16 @@ public class    PoiService extends BaseService<Poi, Long, PoiRepository> {
         return save(newPoi);
     }
 
-    public void addPoiToRoute(Poi poi, Route r, RouteService routeService){
+    public void addPoiToRoute(Poi poi, Route r, List<Poi> steps ,RouteService routeService){
 
-        poi.addToRoute(r);
-        save(poi);
-        routeService.save(r);
+        if(!hasRepeatedPoi(steps, poi)){
+            poi.addToRoute(r);
+            save(poi);
+            routeService.save(r);
+        } else{
+            throw new RepeatedElementsException(Poi.class);
+        }
+
 
 
     }
@@ -81,19 +87,10 @@ public class    PoiService extends BaseService<Poi, Long, PoiRepository> {
         save(poi);
         routeService.save(r);
     }
-/*
-    public boolean hasRepeatedPhotos(){
 
-        List<String> photos = repository.findAllPhotosFromPoi();
-        Set<String> set = new HashSet<>();
+    public boolean hasRepeatedPoi(List<Poi> steps, Poi newPoi){
 
-        for(String p : photos){
-            if(set.add(p) == false){
-                return true;
-            }
-        }
-        return false;
+        return steps.contains(newPoi) ? true : false;
     }
-*/
 
 }

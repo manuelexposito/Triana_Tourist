@@ -1,6 +1,7 @@
 package com.salesianostriana.trianatouristapp.errors;
 
 import com.salesianostriana.trianatouristapp.errors.exceptions.EntityNotFoundException;
+import com.salesianostriana.trianatouristapp.errors.exceptions.RepeatedElementsException;
 import com.salesianostriana.trianatouristapp.errors.model.ApiError;
 import com.salesianostriana.trianatouristapp.errors.model.ApiSubError;
 import com.salesianostriana.trianatouristapp.errors.model.ApiValidationSubError;
@@ -50,6 +51,10 @@ public class GlobalRestAdviceController extends ResponseEntityExceptionHandler {
 
     }
 
+    @ExceptionHandler({RepeatedElementsException.class})
+    public ResponseEntity<?> handleRepeatedElementsException(RepeatedElementsException ex, WebRequest request){
+        return this.buildApiError(ex, HttpStatus.BAD_REQUEST, request, new ArrayList<>());
+    }
 
 
     private ResponseEntity<Object> buildApiError(Exception exception, HttpStatus status, WebRequest request, List<ApiSubError> subErrorList){

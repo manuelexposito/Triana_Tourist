@@ -42,7 +42,6 @@ public class POIController {
 
         return poi;
     }
-    //TODO: Post
 
     @PostMapping("/")
     public ResponseEntity<GetPOIDto> createPoi(@Valid @RequestBody CreatePoiDto poiDto){

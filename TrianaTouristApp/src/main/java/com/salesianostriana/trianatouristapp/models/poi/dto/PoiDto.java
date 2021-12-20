@@ -21,8 +21,10 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @SuperBuilder
 //TODO: Anotacion para que no se repitan las fotos
-//@NotRepeatable(coverPhoto = "coverPhoto", photo2="photo2", photo3 = "photo3")
+@NotRepeatable(coverPhoto = "coverPhoto", photo2 = "photo2", photo3 = "photo3")
 public class PoiDto {
+
+    private Long id;
 
     @NotNull(message = "{poi.name.notnull}")
     private String name;

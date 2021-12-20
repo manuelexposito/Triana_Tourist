@@ -1,6 +1,6 @@
 package com.salesianostriana.trianatouristapp.models.route;
 
-import com.salesianostriana.trianatouristapp.validation.annotations.UniqueElement;
+
 import lombok.*;
 import com.salesianostriana.trianatouristapp.models.poi.Poi;
 import org.hibernate.validator.constraints.UniqueElements;
@@ -19,7 +19,7 @@ import java.util.List;
 public class Route implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Long id;
 
     private String name;

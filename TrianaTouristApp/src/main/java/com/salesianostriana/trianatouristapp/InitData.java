@@ -61,14 +61,15 @@ public class InitData {
         List<Poi> pois = poiService.saveAll(List.of(p1, p2));
 
         Route r1 = Route.builder()
+                .id(1L)
                 .name("Conociendo Sevilla")
                 .build();
 
         routeService.save(r1);
 
 
-        poiService.addPoiToRoute(pois.get(0), r1, routeService);
-        poiService.addPoiToRoute(pois.get(1), r1, routeService);
+        poiService.addPoiToRoute(pois.get(0), r1, r1.getSteps(), routeService);
+        //poiService.addPoiToRoute(pois.get(1), r1, routeService);
 
     }
 

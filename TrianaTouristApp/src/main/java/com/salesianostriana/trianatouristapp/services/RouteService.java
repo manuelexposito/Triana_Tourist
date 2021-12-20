@@ -12,8 +12,7 @@ import com.salesianostriana.trianatouristapp.repositories.RouteRepository;
 import com.salesianostriana.trianatouristapp.services.base.BaseService;
 
 import javax.swing.text.html.Option;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class RouteService extends BaseService<Route, Long, RouteRepository> {
@@ -38,11 +37,15 @@ public class RouteService extends BaseService<Route, Long, RouteRepository> {
 
 
     public void deleteRoute(Route route, PoiService poiService) {
-        //TODO: ARREGLAR EL DELETE
-        route.getSteps()
-                .forEach(poi -> poi.removeFromRoute(route));
 
-        super.delete(route);
+        List<Poi> listaBase = new ArrayList<>();
+        listaBase.addAll(route.getSteps());
+        for (Iterator<Poi> it = listaBase.iterator(); it.hasNext();){
+            Poi p = it.next();
+            poiService.removePoiFromRoute(p, route, this);
+        }
+
+        delete(route);
     }
 
     public Route findRouteById(Long id) {
@@ -56,4 +59,8 @@ public class RouteService extends BaseService<Route, Long, RouteRepository> {
 
         }
     }
+
+
+
+
 }

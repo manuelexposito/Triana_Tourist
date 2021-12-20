@@ -2,7 +2,7 @@ package com.salesianostriana.trianatouristapp.models.route.dto;
 
 import com.salesianostriana.trianatouristapp.models.poi.Poi;
 import com.salesianostriana.trianatouristapp.models.poi.dto.GetPOIDto;
-import com.salesianostriana.trianatouristapp.validation.annotations.UniqueElement;
+
 import lombok.*;
 import org.hibernate.validator.constraints.UniqueElements;
 
@@ -16,6 +16,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GetRouteDto {
+
+    private Long id;
 
     private String name;
 
